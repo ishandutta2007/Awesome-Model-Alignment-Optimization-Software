@@ -1,6 +1,6 @@
 # Awesome-Model-Alignment-Optimization-Software
 
-# Top Model Alignment Optimization Software Ecosystem
+## Top Model Alignment Optimization Software Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 *Focused on RLHF Data Curation, Preference Labeling & Alignment Feedback Loops*  
