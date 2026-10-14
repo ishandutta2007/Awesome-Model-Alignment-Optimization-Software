@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Model-Alignment-Optimization-Software/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Model-Alignment-Optimization-Software?style=flat-square&logo=github&color=gold" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Model-Alignment-Optimization-Software/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Model-Alignment-Optimization-Software?style=flat-square&logo=github&color=gold" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Model-Alignment-Optimization-Software/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Model-Alignment-Optimization-Software?style=flat-square&logo=github&color=blue" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Model-Alignment-Optimization-Software/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Model-Alignment-Optimization-Software?style=flat-square&logo=github&color=green" alt="Open Issues" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Model-Alignment-Optimization-Software/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Model-Alignment-Optimization-Software?style=flat-square&color=orange" alt="License" /></a>
@@ -84,92 +84,92 @@ The open-source ecosystem provides foundational building blocks for researchers 
 
 > *Sorted descending by GitHub Stargazers count.*
 
-### 1. **[Unsloth](https://github.com/unslothai/unsloth)** [![GitHub stars](https://img.shields.io/github/stars/unslothai/unsloth?style=social&color=white)](https://github.com/unslothai/unsloth/stargazers)
+### 1. **[Unsloth](https://github.com/unslothai/unsloth)** [![GitHub_Stars](https://img.shields.io/github/stars/unslothai/unsloth?style=social&color=white)](https://github.com/unslothai/unsloth/stargazers)
 - **Primary Domain:** Ultra-fast, memory-efficient fine-tuning and post-training alignment (SFT, DPO, ORPO).
 - **Key Capabilities:** Handcrafted GPU OpenAI Triton kernels delivering 2x–5x training speedups and 80% memory reduction. Supports full QLoRA/LoRA tuning of Llama, Mistral, Gemma, and DeepSeek models on single consumer GPUs.
 - **License:** Apache 2.0 / Custom Community.
 
-### 2. **[LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)** [![GitHub stars](https://img.shields.io/github/stars/hiyouga/LLaMA-Factory?style=social&color=white)](https://github.com/hiyouga/LLaMA-Factory/stargazers)
+### 2. **[LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)** [![GitHub_Stars](https://img.shields.io/github/stars/hiyouga/LLaMA-Factory?style=social&color=white)](https://github.com/hiyouga/LLaMA-Factory/stargazers)
 - **Primary Domain:** Unified efficient fine-tuning and alignment suite supporting 100+ LLMs and VLMs.
 - **Key Capabilities:** Provides a zero-code web UI (LLaMA Board) alongside a modular CLI for SFT, Reward Modeling, PPO, DPO, KTO, and ORPO. Incorporates FlashAttention-2, Unsloth kernels, GaLore, and vLLM inference engine integration.
 - **License:** Apache 2.0.
 
-### 3. **[Label Studio](https://github.com/HumanSignal/label-studio)** [![GitHub stars](https://img.shields.io/github/stars/HumanSignal/label-studio?style=social&color=white)](https://github.com/HumanSignal/label-studio/stargazers)
+### 3. **[Label Studio](https://github.com/HumanSignal/label-studio)** [![GitHub_Stars](https://img.shields.io/github/stars/HumanSignal/label-studio?style=social&color=white)](https://github.com/HumanSignal/label-studio/stargazers)
 - **Primary Domain:** Multi-modal data annotation and human preference labeling platform.
 - **Key Capabilities:** Highly flexible UI configurable for pairwise response ranking, RLHF scorecards, and conversational multi-turn evaluation. Integrates with ML backends to surface active learning suggestions and model-assisted pre-annotations.
 - **License:** Apache 2.0.
 
-### 4. **[veRL (Volcano Engine Reinforcement Learning)](https://github.com/verl-project/verl)** [![GitHub stars](https://img.shields.io/github/stars/verl-project/verl?style=social&color=white)](https://github.com/verl-project/verl/stargazers)
+### 4. **[veRL (Volcano Engine Reinforcement Learning)](https://github.com/verl-project/verl)** [![GitHub_Stars](https://img.shields.io/github/stars/verl-project/verl?style=social&color=white)](https://github.com/verl-project/verl/stargazers)
 - **Primary Domain:** Production-grade, high-throughput RL post-training framework for LLMs (popularized by DeepSeek R1).
 - **Key Capabilities:** Built on the HybridFlow actor-critic decoupling architecture, orchestrating Ray, 3D Megatron-LM parallelism, and high-performance vLLM rollout generation. Supports scalable PPO, GRPO, and DAPO across thousands of GPUs.
 - **License:** Apache 2.0.
 
-### 5. **[TRL (Transformer Reinforcement Learning)](https://github.com/huggingface/trl)** [![GitHub stars](https://img.shields.io/github/stars/huggingface/trl?style=social&color=white)](https://github.com/huggingface/trl/stargazers)
+### 5. **[TRL (Transformer Reinforcement Learning)](https://github.com/huggingface/trl)** [![GitHub_Stars](https://img.shields.io/github/stars/huggingface/trl?style=social&color=white)](https://github.com/huggingface/trl/stargazers)
 - **Primary Domain:** Hugging Face’s standard library for post-training alignment and reinforcement learning.
 - **Key Capabilities:** Feature-complete Trainers including `SFTTrainer`, `DPOTrainer`, `PPOTrainer`, `GRPOTrainer`, `RewardTrainer`, and `KTOTrainer`. Native integration with PEFT (LoRA/QLoRA), Accelerate, DeepSpeed, and vLLM rollout generation.
 - **License:** Apache 2.0.
 
-### 6. **[LitGPT](https://github.com/Lightning-AI/litgpt)** [![GitHub stars](https://img.shields.io/github/stars/Lightning-AI/litgpt?style=social&color=white)](https://github.com/Lightning-AI/litgpt/stargazers)
+### 6. **[LitGPT](https://github.com/Lightning-AI/litgpt)** [![GitHub_Stars](https://img.shields.io/github/stars/Lightning-AI/litgpt?style=social&color=white)](https://github.com/Lightning-AI/litgpt/stargazers)
 - **Primary Domain:** Hackable, performant implementations of 20+ open LLMs with alignment fine-tuning recipes.
 - **Key Capabilities:** Clean, single-file model architectures without nested framework abstractions. Includes out-of-the-box scripts for pretraining, parameter-efficient fine-tuning (LoRA), and preference optimization.
 - **License:** Apache 2.0.
 
-### 7. **[Axolotl](https://github.com/axolotl-ai-cloud/axolotl)** [![GitHub stars](https://img.shields.io/github/stars/axolotl-ai-cloud/axolotl?style=social&color=white)](https://github.com/axolotl-ai-cloud/axolotl/stargazers)
+### 7. **[Axolotl](https://github.com/axolotl-ai-cloud/axolotl)** [![GitHub_Stars](https://img.shields.io/github/stars/axolotl-ai-cloud/axolotl?style=social&color=white)](https://github.com/axolotl-ai-cloud/axolotl/stargazers)
 - **Primary Domain:** Configuration-driven LLM post-training and alignment harness.
 - **Key Capabilities:** Single YAML files specify datasets, prompt tokenization strategies, LoRA hyperparameters, and training regimes for DPO, SFT, and KTO. Backed by PyTorch FSDP, DeepSpeed, and FlashAttention-2.
 - **License:** Apache 2.0.
 
-### 8. **[Cleanlab](https://github.com/cleanlab/cleanlab)** [![GitHub stars](https://img.shields.io/github/stars/cleanlab/cleanlab?style=social&color=white)](https://github.com/cleanlab/cleanlab/stargazers)
+### 8. **[Cleanlab](https://github.com/cleanlab/cleanlab)** [![GitHub_Stars](https://img.shields.io/github/stars/cleanlab/cleanlab?style=social&color=white)](https://github.com/cleanlab/cleanlab/stargazers)
 - **Primary Domain:** Data-centric AI standard for automatic label error detection and dataset curation.
 - **Key Capabilities:** Implements Confident Learning algorithms to systematically estimate noise in human and synthetic preference datasets. Flags inverted preference pairs, ambiguous prompt rankings, and corrupted inputs before model training.
 - **License:** AGPL-3.0 / MIT.
 
-### 9. **[OpenRLHF](https://github.com/OpenRLHF/OpenRLHF)** [![GitHub stars](https://img.shields.io/github/stars/OpenRLHF/OpenRLHF?style=social&color=white)](https://github.com/OpenRLHF/OpenRLHF/stargazers)
+### 9. **[OpenRLHF](https://github.com/OpenRLHF/OpenRLHF)** [![GitHub_Stars](https://img.shields.io/github/stars/OpenRLHF/OpenRLHF?style=social&color=white)](https://github.com/OpenRLHF/OpenRLHF/stargazers)
 - **Primary Domain:** Industrial-scale RLHF framework built for extreme distributed post-training.
 - **Key Capabilities:** Employs Ray, DeepSpeed ZeRO-3, and vLLM to scale 70B+ model alignment across GPU clusters. Features out-of-the-box support for PPO, DPO, KTO, GRPO, and rejection sampling with ring-attention support.
 - **License:** Apache 2.0.
 
-### 10. **[DeepSpeed-Chat](https://github.com/deepspeedai/DeepSpeedExamples)** [![GitHub stars](https://img.shields.io/github/stars/deepspeedai/DeepSpeedExamples?style=social&color=white)](https://github.com/deepspeedai/DeepSpeedExamples/stargazers)
+### 10. **[DeepSpeed-Chat](https://github.com/deepspeedai/DeepSpeedExamples)** [![GitHub_Stars](https://img.shields.io/github/stars/deepspeedai/DeepSpeedExamples?style=social&color=white)](https://github.com/deepspeedai/DeepSpeedExamples/stargazers)
 - **Primary Domain:** End-to-end RLHF pipeline optimization from Microsoft DeepSpeed.
 - **Key Capabilities:** Three-stage post-training pipeline (Supervised Fine-Tuning, Reward Model training, and PPO Reinforcement Learning). Optimized memory management utilizing DeepSpeed ZeRO-3 and Hybrid Engine execution.
 - **License:** Apache 2.0.
 
-### 11. **[alignment-handbook](https://github.com/huggingface/alignment-handbook)** [![GitHub stars](https://img.shields.io/github/stars/huggingface/alignment-handbook?style=social&color=white)](https://github.com/huggingface/alignment-handbook/stargazers)
+### 11. **[alignment-handbook](https://github.com/huggingface/alignment-handbook)** [![GitHub_Stars](https://img.shields.io/github/stars/huggingface/alignment-handbook?style=social&color=white)](https://github.com/huggingface/alignment-handbook/stargazers)
 - **Primary Domain:** Hugging Face’s verified recipes for training aligned open models (Zephyr, Starling).
 - **Key Capabilities:** Reproducible recipes and production scripts for multi-turn conversational SFT, DPO, and ORPO alignment with Slurm/DeepSpeed configurations.
 - **License:** Apache 2.0.
 
-### 12. **[OpenChat](https://github.com/imoneoi/openchat)** [![GitHub stars](https://img.shields.io/github/stars/imoneoi/openchat?style=social&color=white)](https://github.com/imoneoi/openchat/stargazers)
+### 12. **[OpenChat](https://github.com/imoneoi/openchat)** [![GitHub_Stars](https://img.shields.io/github/stars/imoneoi/openchat?style=social&color=white)](https://github.com/imoneoi/openchat/stargazers)
 - **Primary Domain:** Framework for advancing open models using Conditioned Reinforcement Learning Fine-Tuning (C-RLFT).
 - **Key Capabilities:** Treats mixed-quality feedback data by conditioning on quality tokens, enabling models to learn from imperfect web-scale and crowdsourced datasets without quality degradation.
 - **License:** Apache 2.0.
 
-### 13. **[Argilla](https://github.com/argilla-io/argilla)** [![GitHub stars](https://img.shields.io/github/stars/argilla-io/argilla?style=social&color=white)](https://github.com/argilla-io/argilla/stargazers)
+### 13. **[Argilla](https://github.com/argilla-io/argilla)** [![GitHub_Stars](https://img.shields.io/github/stars/argilla-io/argilla?style=social&color=white)](https://github.com/argilla-io/argilla/stargazers)
 - **Primary Domain:** Open-source data curation and preference engineering platform for LLMs.
 - **Key Capabilities:** Web application and Python SDK tailored for human-in-the-loop preference collection, conversational multi-turn ranking, and direct integration with Hugging Face TRL and distilabel pipelines.
 - **License:** Apache 2.0.
 
-### 14. **[trlX](https://github.com/CarperAI/trlx)** [![GitHub stars](https://img.shields.io/github/stars/CarperAI/trlx?style=social&color=white)](https://github.com/CarperAI/trlx/stargazers)
+### 14. **[trlX](https://github.com/CarperAI/trlx)** [![GitHub_Stars](https://img.shields.io/github/stars/CarperAI/trlx?style=social&color=white)](https://github.com/CarperAI/trlx/stargazers)
 - **Primary Domain:** Distributed library for RLHF fine-tuning of large language models up to 33B+ parameters.
 - **Key Capabilities:** Developed by CarperAI / EleutherAI; supports PPO and Implicit Language Q-Learning (ILQL) with PyTorch Accelerate and NVIDIA NeMo distributed backends.
 - **License:** MIT.
 
-### 15. **[Open-Instruct](https://github.com/allenai/open-instruct)** [![GitHub stars](https://img.shields.io/github/stars/allenai/open-instruct?style=social&color=white)](https://github.com/allenai/open-instruct/stargazers)
+### 15. **[Open-Instruct](https://github.com/allenai/open-instruct)** [![GitHub_Stars](https://img.shields.io/github/stars/allenai/open-instruct?style=social&color=white)](https://github.com/allenai/open-instruct/stargazers)
 - **Primary Domain:** Allen Institute for AI (AI2) reference post-training and alignment codebase.
 - **Key Capabilities:** Powers the flagship Tülu 3 model suite. Full pipelines for supervised instruction tuning, DPO, RLVR (Reinforcement Learning with Verifiable Rewards), and extensive evaluation harnesses.
 - **License:** Apache 2.0.
 
-### 16. **[distilabel](https://github.com/argilla-io/distilabel)** [![GitHub stars](https://img.shields.io/github/stars/argilla-io/distilabel?style=social&color=white)](https://github.com/argilla-io/distilabel/stargazers)
+### 16. **[distilabel](https://github.com/argilla-io/distilabel)** [![GitHub_Stars](https://img.shields.io/github/stars/argilla-io/distilabel?style=social&color=white)](https://github.com/argilla-io/distilabel/stargazers)
 - **Primary Domain:** Synthetic data generation and automated AI feedback (RLAIF) framework.
 - **Key Capabilities:** Graph-based pipeline architecture for generating preference pairs, evolutionary instruction synthesis (UltraFeedback style), and LLM-as-a-judge critiques with vLLM acceleration.
 - **License:** Apache 2.0.
 
-### 17. **[Safe-RLHF](https://github.com/PKU-Alignment/safe-rlhf)** [![GitHub stars](https://img.shields.io/github/stars/PKU-Alignment/safe-rlhf?style=social&color=white)](https://github.com/PKU-Alignment/safe-rlhf/stargazers)
+### 17. **[Safe-RLHF](https://github.com/PKU-Alignment/safe-rlhf)** [![GitHub_Stars](https://img.shields.io/github/stars/PKU-Alignment/safe-rlhf?style=social&color=white)](https://github.com/PKU-Alignment/safe-rlhf/stargazers)
 - **Primary Domain:** Constrained value alignment and safety-oriented reinforcement learning.
 - **Key Capabilities:** Decouples human preferences into independent reward (helpfulness) and cost (harmlessness) functions, using Lagrangian PPO methods to guarantee safety constraints without sacrificing capability.
 - **License:** Apache 2.0.
 
-### 18. **[NeMo-Aligner](https://github.com/NVIDIA/NeMo-Aligner)** [![GitHub stars](https://img.shields.io/github/stars/NVIDIA/NeMo-Aligner?style=social&color=white)](https://github.com/NVIDIA/NeMo-Aligner/stargazers)
+### 18. **[NeMo-Aligner](https://github.com/NVIDIA/NeMo-Aligner)** [![GitHub_Stars](https://img.shields.io/github/stars/NVIDIA/NeMo-Aligner?style=social&color=white)](https://github.com/NVIDIA/NeMo-Aligner/stargazers)
 - **Primary Domain:** NVIDIA’s high-performance, multi-node GPU toolkit for LLM alignment.
 - **Key Capabilities:** Built on Megatron-Core and TensorRT-LLM, supporting DPO, PPO, Reinforcement Learning from AI Feedback (RLAIF), and SteerLM across large NVIDIA DGX supercomputing clusters.
 - **License:** Apache 2.0.
