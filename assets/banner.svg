@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0c16" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#070913" />
+    </linearGradient>
+
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1">
+        <animate attributeName="stop-color" values="#6366f1;#38bdf8;#ec4899;#6366f1" dur="10s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#38bdf8">
+        <animate attributeName="stop-color" values="#38bdf8;#ec4899;#6366f1;#38bdf8" dur="10s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#a855f7">
+        <animate attributeName="stop-color" values="#a855f7;#6366f1;#38bdf8;#a855f7" dur="10s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="glow-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0" />
+    </linearGradient>
+
+    <filter id="glow-blur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="soft-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.75" />
+    </filter>
+
+    <style>
+      .glow-node {
+        animation: pulseNode 4s ease-in-out infinite alternate;
+      }
+      .flow-path {
+        stroke-dasharray: 8 12;
+        animation: dashStream 25s linear infinite;
+      }
+      .flow-path-reverse {
+        stroke-dasharray: 6 10;
+        animation: dashStreamRev 20s linear infinite;
+      }
+      .floating-particle {
+        animation: floatOrb 6s ease-in-out infinite alternate;
+      }
+      @keyframes dashStream {
+        to { stroke-dashoffset: -400; }
+      }
+      @keyframes dashStreamRev {
+        to { stroke-dashoffset: 400; }
+      }
+      @keyframes pulseNode {
+        0% { transform: scale(1); opacity: 0.6; }
+        100% { transform: scale(1.15); opacity: 0.95; }
+      }
+      @keyframes floatOrb {
+        0% { transform: translateY(0px) scale(0.95); }
+        100% { transform: translateY(-10px) scale(1.05); }
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="360" rx="16" fill="url(#bg-grad)" />
+
+  <!-- Grid Pattern Overlay -->
+  <g opacity="0.12" stroke="#6366f1" stroke-width="1">
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="150" y1="0" x2="150" y2="360" />
+    <line x1="300" y1="0" x2="300" y2="360" />
+    <line x1="450" y1="0" x2="450" y2="360" />
+    <line x1="600" y1="0" x2="600" y2="360" />
+    <line x1="750" y1="0" x2="750" y2="360" />
+    <line x1="900" y1="0" x2="900" y2="360" />
+    <line x1="1050" y1="0" x2="1050" y2="360" />
+  </g>
+
+  <!-- Ambient Glowing Blobs in Background -->
+  <circle cx="200" cy="180" r="140" fill="#4f46e5" opacity="0.22" filter="url(#glow-blur)" />
+  <circle cx="1000" cy="180" r="140" fill="#06b6d4" opacity="0.2" filter="url(#glow-blur)" />
+  <circle cx="600" cy="80" r="120" fill="#a855f7" opacity="0.15" filter="url(#glow-blur)" />
+
+  <!-- Animated Data Flow Lines (strictly kept in background) -->
+  <g opacity="0.35" fill="none" stroke-width="2">
+    <!-- Left to Center Feedback Stream -->
+    <path class="flow-path" stroke="#818cf8" d="M 60 180 C 180 80, 320 280, 520 180" />
+    <path class="flow-path-reverse" stroke="#38bdf8" d="M 80 220 C 220 320, 380 90, 560 180" />
+    <!-- Center to Right Alignment Stream -->
+    <path class="flow-path" stroke="#ec4899" d="M 680 180 C 840 80, 980 270, 1140 180" />
+    <path class="flow-path-reverse" stroke="#a855f7" d="M 640 180 C 800 280, 940 90, 1120 200" />
+  </g>
+
+  <!-- Network Circuit Nodes (Subtle Animated Accent Elements) -->
+  <g opacity="0.5">
+    <circle cx="90" cy="90" r="6" fill="#38bdf8" class="glow-node" />
+    <circle cx="1110" cy="90" r="6" fill="#ec4899" class="glow-node" />
+    <circle cx="70" cy="270" r="8" fill="#818cf8" class="glow-node" />
+    <circle cx="1130" cy="270" r="8" fill="#10b981" class="glow-node" />
+    <line x1="90" y1="90" x2="160" y2="90" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="3 3" />
+    <line x1="1040" y1="90" x2="1110" y2="90" stroke="#ec4899" stroke-width="1.5" stroke-dasharray="3 3" />
+    <line x1="70" y1="270" x2="140" y2="270" stroke="#818cf8" stroke-width="1.5" stroke-dasharray="3 3" />
+    <line x1="1060" y1="270" x2="1130" y2="270" stroke="#10b981" stroke-width="1.5" stroke-dasharray="3 3" />
+  </g>
+
+  <!-- Semi-Transparent Foreground Card Ensuring Text Legibility -->
+  <rect x="100" y="32" width="1000" height="296" rx="20" fill="#0d111db8" stroke="#312e81" stroke-width="1.5" filter="url(#soft-shadow)" />
+
+  <!-- Outer Card Top Highlight Border -->
+  <rect x="100" y="32" width="1000" height="2" fill="url(#accent-grad)" rx="1" />
+
+  <!-- FOREGROUND CONTENT: Header Tag, Title, Subtitle, Badges (Crisp, High-Contrast) -->
+  <g text-anchor="middle" id="foreground-text">
+    
+    <!-- Top Super-Header Tag -->
+    <g transform="translate(600, 72)">
+      <rect x="-140" y="-14" width="280" height="28" rx="14" fill="#1e1b4b" stroke="#6366f1" stroke-width="1.2" />
+      <circle cx="-118" cy="0" r="4.5" fill="#10b981">
+        <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite" />
+      </circle>
+      <text x="6" y="4.5" fill="#c7d2fe" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" letter-spacing="1.2">
+        POST-TRAINING &amp; RLHF ECOSYSTEM
+      </text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="600" y="142" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="37" font-weight="900" fill="#ffffff" letter-spacing="-0.5" filter="drop-shadow(0 3px 6px rgba(0,0,0,0.8))">
+      Awesome Model Alignment Optimization
+    </text>
+
+    <!-- Subtitle (Clear, readable, unaffected by background motion) -->
+    <text x="600" y="186" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="500" fill="#94a3b8">
+      Curated Directory of SaaS Platforms &amp; Open-Source Post-Training Frameworks
+    </text>
+
+    <text x="600" y="215" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#64748b">
+      RLHF Data Curation • DPO &amp; PPO Training • Synthetic Feedback • Label QA &amp; Evaluation
+    </text>
+
+    <!-- Foreground Feature Chips/Pills -->
+    <g transform="translate(600, 272)">
+      <!-- Chip 1: RLHF & DPO -->
+      <g transform="translate(-360, -16)">
+        <rect width="105" height="32" rx="8" fill="#1e1b4b" stroke="#4f46e5" stroke-width="1.2" />
+        <text x="52.5" y="20.5" fill="#a5b4fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">⚡ RLHF / DPO</text>
+      </g>
+      <!-- Chip 2: veRL & TRL -->
+      <g transform="translate(-240, -16)">
+        <rect width="110" height="32" rx="8" fill="#14283b" stroke="#0284c7" stroke-width="1.2" />
+        <text x="55" y="20.5" fill="#7dd3fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">🚀 GRPO / PPO</text>
+      </g>
+      <!-- Chip 3: Preference Labeling -->
+      <g transform="translate(-115, -16)">
+        <rect width="140" height="32" rx="8" fill="#2d1537" stroke="#c026d3" stroke-width="1.2" />
+        <text x="70" y="20.5" fill="#f0abfc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">👥 Human Feedback</text>
+      </g>
+      <!-- Chip 4: Label Error Detection -->
+      <g transform="translate(40, -16)">
+        <rect width="145" height="32" rx="8" fill="#0f291e" stroke="#059669" stroke-width="1.2" />
+        <text x="72.5" y="20.5" fill="#6ee7b7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">🔬 Cleanlab / Quality</text>
+      </g>
+      <!-- Chip 5: Synthetic Data -->
+      <g transform="translate(200, -16)">
+        <rect width="160" height="32" rx="8" fill="#31191a" stroke="#e11d48" stroke-width="1.2" />
+        <text x="80" y="20.5" fill="#fda4af" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">🤖 Synthetic Feedback</text>
+      </g>
+    </g>
+
+  </g>
+</svg>
